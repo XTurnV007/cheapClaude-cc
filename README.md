@@ -4,6 +4,8 @@
 
 使用Kimi的最新模型（kimi-k2-0711-preview）驱动您的Claude Code。
 
+[全面调研kimi-k2-0711-preview性能参数](https://unifuncs.com/s/WA1h39Af)
+
 ## 快速安装
 
 1. 前往Kimi开放平台申请API Key。
