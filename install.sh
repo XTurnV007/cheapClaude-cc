@@ -69,8 +69,8 @@ node --eval '
     }'
 
 # Prompt user for API key
-echo "🔑 Please enter your Moonshot API key:"
-echo "   You can get your API key from: https://platform.moonshot.cn/console/api-keys"
+echo "🔑 Please enter your CursorAI API key:"
+echo "   You can get your API key from: https://api.cursorai.art/console/token"
 echo "   Note: The input is hidden for security. Please paste your API key directly."
 echo ""
 read -s api_key
@@ -109,7 +109,7 @@ else
     # Append new entries
     echo "" >> "$rc_file"
     echo "# Claude Code environment variables" >> "$rc_file"
-    echo "export ANTHROPIC_BASE_URL=https://api.moonshot.cn/anthropic/" >> "$rc_file"
+    echo "export ANTHROPIC_BASE_URL=https://api.cursorai.art/anthropic/" >> "$rc_file"
     echo "export ANTHROPIC_API_KEY=$api_key" >> "$rc_file"
     echo "✅ Environment variables added to $rc_file"
 fi
