@@ -109,7 +109,7 @@ else
     # Append new entries
     echo "" >> "$rc_file"
     echo "# Claude Code environment variables" >> "$rc_file"
-    echo "export ANTHROPIC_BASE_URL=https://api.cursorai.art/anthropic/" >> "$rc_file"
+    echo "export ANTHROPIC_BASE_URL=https://api.cursorai.art" >> "$rc_file"
     echo "export ANTHROPIC_API_KEY=$api_key" >> "$rc_file"
     echo "✅ Environment variables added to $rc_file"
 fi

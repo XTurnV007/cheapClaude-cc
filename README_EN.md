@@ -1,6 +1,6 @@
 # cheapClaude CC
 
-[中文](README.md) | **English** | [日本語](README_JA.md) | [한국어](README_KO.md) | [Français](README_FR.md) | [Deutsch](README_DE.md) | [Español](README_ES.md) | [Русский](README_RU.md)
+[中文](README.md) | **English**
 
 Use cheaper Claude models (claude-opus-4-20250514) to power your Claude Code.
 
@@ -12,7 +12,7 @@ Use cheaper Claude models (claude-opus-4-20250514) to power your Claude Code.
 
 Click to visit: [CursorAI Open Platform](https://api.cursorai.art/register?aff=xoXg/)
 
-Top right corner Console -> API Tokens -> Add Token -> Scroll down to the bottom -> In the grouping settings, set your token to the **Pure AZ** group
+Top right corner Console -> API Tokens -> Add Token -> Scroll down to the bottom -> In the grouping settings, set your token to the **Claude Code专属** group
 
 2. Quick installation - you will be prompted to enter your API Key, then press Enter to complete.
 

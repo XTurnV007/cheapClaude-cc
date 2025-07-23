@@ -1,6 +1,6 @@
 # cheapClaude CC
 
-**中文** | [English](README_EN.md) | [日本語](README_JA.md) | [한국어](README_KO.md) | [Français](README_FR.md) | [Deutsch](README_DE.md) | [Español](README_ES.md) | [Русский](README_RU.md)
+**中文** | [English](README_EN.md)
 
 使用更便宜的Claude模型（claude-opus-4-20250514）驱动您的Claude Code。
 
@@ -12,13 +12,28 @@
 
 点击前往：[CursorAI开放平台](https://api.cursorai.art/register?aff=xoXg/)
 
-右上角控制台 -> API令牌 -> 添加令牌 -> 往下滑动到底部 -> 在分组设置中为您的令牌设置**纯AZ**分组
+右上角控制台 -> API令牌 -> 添加令牌 -> 往下滑动到底部 -> 在分组设置中为您的令牌设置**Claude Code专属**分组
 
+2. 根据您的操作系统选择安装方式：
 
-2. 快速安装，会要求您输入 API Key，最终回车即可。
+### Unix/Linux/macOS
 
 ```shell
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/XTurnV007/cheapClaude-cc/refs/heads/main/install.sh)"
+```
+
+### Windows
+
+在 PowerShell 中运行（建议以管理员身份）：
+
+```powershell
+# 下载并运行安装脚本
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/XTurnV007/cheapClaude-cc/refs/heads/main/install.ps1" -OutFile "install.ps1"; .\install.ps1; Remove-Item "install.ps1"
+```
+
+如果遇到执行策略问题，先运行：
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
 3. 开始低成本使用 Claude Code。
@@ -26,3 +41,16 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/XTurnV007/cheapClaude-cc
 ```shell
 claude
 ```
+
+## 手动安装（所有平台）
+
+如果自动安装脚本无法使用，您可以手动安装：
+
+1. 安装 Node.js 18+ 版本：https://nodejs.org/
+2. 安装 Claude Code：
+   ```
+   npm install -g @anthropic-ai/claude-code
+   ```
+3. 设置环境变量：
+   - `ANTHROPIC_BASE_URL=https://api.cursorai.art`
+   - `ANTHROPIC_API_KEY=你的API密钥`
