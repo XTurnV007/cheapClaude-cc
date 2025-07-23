@@ -14,7 +14,10 @@
 
 右上角控制台 -> API令牌 -> 添加令牌 -> 往下滑动到底部 -> 在分组设置中为您的令牌设置**Claude Code专属**分组
 
-![设置**Claude Code专属**令牌分组](images/claudecode.png)
+![新建令牌](images/step1.png)
+![设置令牌名称和额度](images/step2.png)
+![设置**Claude Code专属**令牌分组](images/step3.png)
+![复制令牌](images/step4.png)
 
 2. 根据您的操作系统选择安装方式：
 

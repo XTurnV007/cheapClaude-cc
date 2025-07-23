@@ -14,7 +14,10 @@ Click to visit: [CursorAI Open Platform](https://api.cursorai.art/register?aff=x
 
 Top right corner Console -> API Tokens -> Add Token -> Scroll down to the bottom -> In the grouping settings, set your token to the **Claude Code专属** group
 
-![Set **Claude Code专属** Token Group](images/claudecode.png)
+![Create a new token](images/step1.png)
+![Set token name and quota](images/step2.png)
+![Set **Claude Code专属** token group](images/step3.png)
+![Copy token](images/step4.png)
 
 2. Choose installation method based on your operating system:
 
