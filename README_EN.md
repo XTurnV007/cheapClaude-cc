@@ -14,10 +14,29 @@ Click to visit: [CursorAI Open Platform](https://api.cursorai.art/register?aff=x
 
 Top right corner Console -> API Tokens -> Add Token -> Scroll down to the bottom -> In the grouping settings, set your token to the **Claude Code专属** group
 
-2. Quick installation - you will be prompted to enter your API Key, then press Enter to complete.
+2. Choose installation method based on your operating system:
+
+### Unix/Linux/macOS
 
 ```shell
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/XTurnV007/cheapClaude-cc/refs/heads/main/install.sh)"
+```
+
+### Windows
+
+Run in PowerShell (recommended to run as Administrator):
+
+```powershell
+# Method 1: Run remote script directly (recommended)
+iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/XTurnV007/cheapClaude-cc/refs/heads/main/install.ps1'))
+
+# Method 2: If method 1 fails, use the following command
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/XTurnV007/cheapClaude-cc/refs/heads/main/install.ps1" -OutFile "install.ps1" -ContentType "text/plain; charset=utf-8"; Get-Content -Path "install.ps1" -Encoding UTF8 | Out-String | Invoke-Expression; Remove-Item "install.ps1"
+```
+
+If you encounter execution policy issues, first run:
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
 3. Start using Claude Code at low cost.
@@ -26,31 +45,15 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/XTurnV007/cheapClaude-cc
 claude
 ```
 
-## Features
+## Manual Installation (All Platforms)
 
-- **Cost-effective**: Use Cursor Ai's competitive pricing instead of direct Anthropic API
-- **Easy setup**: One-command installation with automatic configuration
-- **Seamless integration**: Works with existing Claude Code workflows
-- **Latest model**: Powered by Cursor Ai's claude-opus-4-20250514 model
+If the automatic installation script doesn't work, you can install manually:
 
-## What the installer does
-
-The installation script automatically:
-1. Checks and installs Node.js (v18+) if needed
-2. Installs Claude Code globally via npm
-3. Configures Claude Code to skip onboarding
-4. Prompts for your CursorAi API key
-5. Sets up environment variables to redirect API calls to Cursor Ai's servers
-
-## Manual Configuration
-
-If you prefer to configure manually, set these environment variables:
-
-```bash
-export ANTHROPIC_BASE_URL=https://api.cursorai.art/anthropic/
-export ANTHROPIC_API_KEY=your_CursorAi_api_key_here
-```
-
-## Support
-
-For issues or questions, please visit the [Cursor Ai Open Platform](https://api.cursorai.art/register?aff=xoXg) or check the original Claude Code documentation. 
+1. Install Node.js 18+ version: https://nodejs.org/
+2. Install Claude Code:
+   ```
+   npm install -g @anthropic-ai/claude-code
+   ```
+3. Set environment variables:
+   - `ANTHROPIC_BASE_URL=https://api.cursorai.art`
+   - `ANTHROPIC_API_KEY=your_api_key` 
