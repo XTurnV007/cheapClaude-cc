@@ -26,11 +26,15 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/XTurnV007/cheapClaude-cc
 
 Run in PowerShell (recommended to run as Administrator):
 
-```powershell
-# Method 1: Run remote script directly (recommended)
-iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/XTurnV007/cheapClaude-cc/refs/heads/main/install.ps1'))
+**Method 1: Run remote script directly (recommended)**
 
-# Method 2: If method 1 fails, use the following command
+```powershell
+iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/XTurnV007/cheapClaude-cc/refs/heads/main/install.ps1'))
+```
+
+**Method 2: If method 1 fails, use the following command**
+
+```powershell
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/XTurnV007/cheapClaude-cc/refs/heads/main/install.ps1" -OutFile "install.ps1" -ContentType "text/plain; charset=utf-8"; Get-Content -Path "install.ps1" -Encoding UTF8 | Out-String | Invoke-Expression; Remove-Item "install.ps1"
 ```
 

@@ -26,11 +26,15 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/XTurnV007/cheapClaude-cc
 
 在 PowerShell 中运行（建议以管理员身份）：
 
-```powershell
-# 方法1：直接运行远程脚本（推荐）
-iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/XTurnV007/cheapClaude-cc/refs/heads/main/install.ps1'))
+**方法1：直接运行远程脚本（推荐）**
 
-# 方法2：如果方法1失败，使用以下命令
+```powershell
+iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/XTurnV007/cheapClaude-cc/refs/heads/main/install.ps1'))
+```
+
+**方法2：如果方法1失败，使用以下命令**
+
+```powershell
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/XTurnV007/cheapClaude-cc/refs/heads/main/install.ps1" -OutFile "install.ps1" -ContentType "text/plain; charset=utf-8"; Get-Content -Path "install.ps1" -Encoding UTF8 | Out-String | Invoke-Expression; Remove-Item "install.ps1"
 ```
 
