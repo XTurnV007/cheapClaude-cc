@@ -14,6 +14,8 @@ Click to visit: [CursorAI Open Platform](https://api.cursorai.art/register?aff=x
 
 Top right corner Console -> API Tokens -> Add Token -> Scroll down to the bottom -> In the grouping settings, set your token to the **Claude Code专属** group
 
+![Set **Claude Code专属** Token Group](images/claudecode.png)
+
 2. Choose installation method based on your operating system:
 
 ### Unix/Linux/macOS
@@ -25,14 +27,6 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/XTurnV007/cheapClaude-cc
 ### Windows
 
 Run in PowerShell (recommended to run as Administrator):
-
-**Method 1: Run remote script directly (recommended)**
-
-```powershell
-iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/XTurnV007/cheapClaude-cc/refs/heads/main/install.ps1'))
-```
-
-**Method 2: If method 1 fails, use the following command**
 
 ```powershell
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/XTurnV007/cheapClaude-cc/refs/heads/main/install.ps1" -OutFile "install.ps1" -ContentType "text/plain; charset=utf-8"; Get-Content -Path "install.ps1" -Encoding UTF8 | Out-String | Invoke-Expression; Remove-Item "install.ps1"

@@ -14,6 +14,8 @@
 
 右上角控制台 -> API令牌 -> 添加令牌 -> 往下滑动到底部 -> 在分组设置中为您的令牌设置**Claude Code专属**分组
 
+![设置**Claude Code专属**令牌分组](images/claudecode.png)
+
 2. 根据您的操作系统选择安装方式：
 
 ### Unix/Linux/macOS
@@ -25,14 +27,6 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/XTurnV007/cheapClaude-cc
 ### Windows
 
 在 PowerShell 中运行（建议以管理员身份）：
-
-**方法1：直接运行远程脚本（推荐）**
-
-```powershell
-iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/XTurnV007/cheapClaude-cc/refs/heads/main/install.ps1'))
-```
-
-**方法2：如果方法1失败，使用以下命令**
 
 ```powershell
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/XTurnV007/cheapClaude-cc/refs/heads/main/install.ps1" -OutFile "install.ps1" -ContentType "text/plain; charset=utf-8"; Get-Content -Path "install.ps1" -Encoding UTF8 | Out-String | Invoke-Expression; Remove-Item "install.ps1"
