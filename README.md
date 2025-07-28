@@ -58,3 +58,10 @@ claude
 3. 设置环境变量：
    - `ANTHROPIC_BASE_URL=https://api.cursorai.art`
    - `ANTHROPIC_API_KEY=你的API密钥`
+
+
+## 常见问题汇总
+
+1.配置完成之后，问问题不回复也不报错
+
+请你将CURSOR API平台的令牌分组设置为**Claude Code专属**分组

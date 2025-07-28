@@ -58,3 +58,14 @@ If the automatic installation script doesn't work, you can install manually:
 3. Set environment variables:
    - `ANTHROPIC_BASE_URL=https://api.cursorai.art`
    - `ANTHROPIC_API_KEY=your_api_key` 
+
+
+## FAQ Summary
+
+1. After configuration is complete, no response to questions and no error messages
+
+Please set your token group on the CURSOR API platform to the **Claude Code专属** group.
+
+2. Claude code shows "offline" after answering each question
+
+Being offline means not logged into an account. This project's method doesn't require logging into an account.
