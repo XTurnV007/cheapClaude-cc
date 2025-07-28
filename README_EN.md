@@ -66,6 +66,6 @@ If the automatic installation script doesn't work, you can install manually:
 
 Please set your token group on the CURSOR API platform to the **Claude Code专属** group.
 
-2. Claude code shows "offline" after answering each question
+2. Claude code shows **"offline"** after answering each question
 
 Being offline means not logged into an account. This project's method doesn't require logging into an account.
