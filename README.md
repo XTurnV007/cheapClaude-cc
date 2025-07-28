@@ -65,3 +65,7 @@ claude
 1.配置完成之后，问问题不回复也不报错
 
 请你将CURSOR API平台的令牌分组设置为**Claude Code专属**分组
+
+2.Claude code在每次回答完问题时，显示offline
+
+未登录账号就是offline，此项目的方法不需要登录账号
